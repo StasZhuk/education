@@ -1,0 +1,110 @@
+header {
+    min-height: 800px;
+    background: url('../img/top_bg.jpg') no-repeat top center;
+    background-size: cover;
+    color: $white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.logo {
+    font-size: 40px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+.tab_item {
+    display: none
+}
+
+;
+.tab_item:first-child {
+    display: block
+}
+
+;
+.header__top-contacts {
+    text-align: right;
+    .tab_content {
+        font-size: 35px;
+        font-family: "RobotoBold", sans-serif;
+    }
+    .tabs {
+        color: rgba($white, 0.7);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "RobotoRegular", sans-serif;
+        span {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+    .active {
+        text-decoration: underline;
+        color: rgba($white, 1);
+    }
+}
+
+.header__heading {
+    padding-top: 50px;
+    font-family: 'CleanvertisingLight', sans-serif;
+    margin-bottom: 80px;
+}
+
+.header__h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.header__desc {
+    font-size: 35px;
+}
+
+//Tabs heading
+.header__tabs {
+    font-family: "RobotoBold", sans-serif;
+    color: $black;
+    text-transform: uppercase;
+    .tabs {
+        color: $white;
+    }
+    .tab {
+        float: left;
+        background-color: rgba($white, 0.3);
+        padding: 15px 20px;
+        font-size: 16px;
+        @include transition(all 0.3s ease);
+    }
+    .tab.active {
+        color: $black;
+        background-color: rgba($white, 0.6);
+    }
+    .tab_content {
+        background-color: rgba($white, 0.6);
+        padding: 20px;
+    }
+    .tab_item {
+        font-size: 18px;
+    }
+    .tab_item__list-item {
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 15px;
+    }
+    .tab_item__list-item:first-child {
+        i {
+            top: -5px;
+            ;
+        }
+    }
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 16px;
+        color: rgba($black, 0.5)
+    }
+    .button__wrap {
+        margin-top: 20px;
+        text-align: right;
+    }
+}

@@ -1,0 +1,63 @@
+.tizers {
+    background-image:  linear-gradient(#b7d0f0, #e8eff7);
+    color: $blue;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .col-sm-6 {
+        overflow: hidden;
+    }
+
+    .tizers__desc, .tizers__img {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .tizers__desc {
+        padding-left: 10px;
+        font-family: "CleanvertisingLight", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .tizers__img i {
+        line-height: 30px;
+    }
+
+    span, strong {
+        display: block;
+    }
+
+    i { 
+        position: relative;
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    .row > div {
+        margin-bottom: 30px;
+    }
+
+    .col-md-3 {
+        padding: 0;
+    }
+
+    .col-md-3:first-child {
+        .tizers__desc {
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 14px;
+    }
+        i {
+        font-family: "RobotoBold", sans-serif;
+        top: -5px;
+        font-size: 85px;
+        letter-spacing: -10px;
+    }
+    }
+
+    strong {
+        font-size: 24px;
+        font-weight: normal;
+    }
+}

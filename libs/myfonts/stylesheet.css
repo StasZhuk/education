@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'myfont';
-    src: url('../myfonts/myfont-webfont.woff2') format('woff2'),
-         url('../myfonts/myfont-webfont.woff') format('woff'),
-         url('../myfonts/myfont-webfont.svg#svgmyfont') format('svg');
+    src: url('myfont-webfont.eot') format('eot'),
+         url('myfont-webfont.ttf') format('ttf'),
+         url('myfont-webfont.woff2') format('woff2'),
+         url('myfont-webfont.woff') format('woff'),
+         url('myfont-webfont.svg#svgmyfont') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .my {
@@ -16,6 +17,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
 }
 
 .my.my_a::before {

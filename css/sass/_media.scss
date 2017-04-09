@@ -1,0 +1,125 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .tizers {
+        .row>div {
+            text-align: center;
+        }
+        .tizers__desc {
+            display: block;
+            margin-top: 10px;
+        }
+        .col-md-3:first-child i {
+            top: 27px;
+        }
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .header__heading {
+        margin-bottom: 60px;
+    }
+    .header__top-contacts,
+    .logo,
+    .header__h1,
+    .header__desc {
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .header__top-contacts {
+        .tab_content {
+            font-size: 30px;
+        }
+    }
+    .header__heading {
+        padding-top: 30px;
+    }
+    .header__h1 {
+        font-size: 50px;
+        line-height: 48px;
+    }
+    .header__desc {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .tizers {
+        padding-top: 25px;
+        padding-bottom: 0;
+        .row>div {
+            text-align: left;
+            margin-left: 50px;
+        }
+        .tizers__desc {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .col-md-3:first-child i {
+            top: -5px;
+            margin: -15px;
+        }
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .header__heading {
+        margin-bottom: 50px;
+    }
+    .header__tabs {
+        .tab {
+            font-size: 12px;
+            padding: 15px 10px;
+        }
+        .button__wrap {
+            text-align: center;
+        }
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
