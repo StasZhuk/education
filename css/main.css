@@ -486,6 +486,26 @@ header {
           transform: rotate(180deg);
 }
 
+.rewievs .owl-dots {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.rewievs .owl-dot {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.rewievs .owl-dot.active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

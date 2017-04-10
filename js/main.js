@@ -34,7 +34,6 @@ $(document).ready(function () {
 	//OWLCarousel 
 	$(document).ready(function () {
 		$('.owl-carousel').owlCarousel({
-			loop: true,
 			responsive: {
 				0: {
 					items: 1,
@@ -44,6 +43,11 @@ $(document).ready(function () {
 			navText: "",
 		});
 	});
+
+	// Magnific-popup 
+		$('.img__popup').magnificPopup({
+			type: 'image'
+		});
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function () {
