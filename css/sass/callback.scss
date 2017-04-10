@@ -1,0 +1,28 @@
+.callback {
+    min-height: 230px;
+    background: $red url("../../img/red_bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    
+
+    h3 {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: center;
+        background-color: rgba($white, 0.2);
+        font-size: 26px;
+        padding: 10px 40px;
+    }
+   .button__wrap {
+        text-align: center;
+    }
+
+    a { 
+        display: inline-block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: $black;
+        font-family: "RobotoBold",sans-serif;
+    }
+}

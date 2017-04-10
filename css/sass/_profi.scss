@@ -33,9 +33,11 @@
 }
 
 .form {
+    width: 100%;
     border: 5px solid $green;
     border-radius: 5px;
     padding: 25px;
+    background-color: $white;
     h3 {
         text-align: center;
         text-transform: uppercase;
@@ -86,4 +88,10 @@
             text-transform: uppercase;
         }
     }
+}
+#hidden__form,
+#hidden__back {
+    position: relative;
+    width: 420px;
+    margin: 0 auto;
 }

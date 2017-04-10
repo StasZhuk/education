@@ -1,0 +1,48 @@
+.contacts {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 30px;
+    .contacts__top {
+        display: inline-block;
+        vertical-align: top;
+    }
+    h2 {
+        display: inline-block;
+        vertical-align: middle;
+        color: $black;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+    .tabs {
+        display: inline-block;
+        vertical-align: middle;
+        border: 5px solid $red;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+    .tab {
+        float: left;
+        width: 270px;
+        padding: 10px 30px;
+        font-family: "RobotoBold", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        &.active {
+            background-color: $red;
+            color: $white;
+        }
+    }
+    .tab_content {
+        text-align: center;
+    }
+    .tab_item {
+        font-size: 18px;
+        .map {
+            min-height: 400px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: #e1d6b0;
+        }
+    }
+}

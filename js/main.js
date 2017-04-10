@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
 	// resize height
 	function wResize() {
 		$("header").css("min-height", $(window).height());
@@ -21,6 +23,18 @@ $(document).ready(function () {
 	$(".header__tabs .tab").click(function () {
 		$(".header__tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".header__tabs .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+	$(".contacts .tab_item").not(":first").hide();
+	$(".contacts .tab").click(function () {
+		$(".contacts .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".contacts .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+	$(".footer .tab_item").not(":first").hide();
+	$(".footer .tab").click(function () {
+		$(".footer .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".footer .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
 
@@ -49,6 +63,8 @@ $(document).ready(function () {
 			type: 'image'
 		});
 
+		$('.popup__form').magnificPopup();
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function () {
 		ga("send", "event", "goal", "goal");
@@ -62,10 +78,12 @@ $(document).ready(function () {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
+	
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function (e) {
+	$("form").submit(function (e) {
+		var $this = $(this);
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -74,9 +92,25 @@ $(document).ready(function () {
 		}).done(function () {
 			alert("Спасибо за заявку!");
 			setTimeout(function () {
-				$.fancybox.close();
+				var magnificPopup = $.magnificPopup.instance;
+				magnificPopup.close();
+				$this.trigger("reset");
 			}, 1000);
 		});
+		return false;
 	});
+
+});
+
+
+$(window).load(function () {
+	// animated
+
+	$(".header__h1").animated("fadeInDown", "fadeOut");
+	$(".header__tabs .wrapper").animated("flipInY", "fadeOut");
+	$(".profi__item").animated("fadeInLeft", "fadeOutRight");
+	$(".form").animated("lightSpeedIn", "fadeOut");
+	$(".callback h3").animated("fadeInUp", "fadeOut");
+	$(".footer").animated("fadeInLeft", "fadeOut");
 
 });

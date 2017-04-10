@@ -1,0 +1,36 @@
+.footer {
+    background-color: $white;
+    text-align: center;
+
+    h2 {
+        color: $black;
+        margin-bottom: 10px;
+    }
+    .footer__contacts {
+        margin-top: 30px;
+    }
+}
+
+.footer__contacts {
+    text-align: center;
+    margin-bottom: 40px;
+    .tab_content {
+        color: $red;
+        font-size: 35px;
+        font-family: "RobotoBold", sans-serif;
+    }
+    .tabs {
+        color: rgba($black, 1);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "RobotoRegular", sans-serif;
+        span {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+    .active {
+        text-decoration: underline;
+        color: rgba($red, 1);
+    }
+}

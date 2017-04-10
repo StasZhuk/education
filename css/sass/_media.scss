@@ -117,6 +117,20 @@
         margin: 0 auto;
         margin-top: 60px;
     }
+
+    .contacts {
+        h2 {
+            margin-right: 0;
+        }
+
+        .tab {
+            width: 220px;
+        }
+
+         .tab_content {
+        text-align: center;
+    }
+    }
 }
 
 
@@ -139,6 +153,13 @@
      .form {
         width: 95%;
         margin: 0 auto;
+    }
+
+    .contacts {
+        .tab {
+            padding: 10px 0;
+            width: 170px;
+        }
     }
 }
 
