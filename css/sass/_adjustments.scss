@@ -27,10 +27,12 @@ a:active {
 }
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin: 40px 50px;
     border: 0;
-    border-top: 1px solid #0b0707
+    border-top: 1px solid #0b0707;
+    opacity: 0.5;
+    box-shadow: 0 0 69px 16px rgba(0,0,0,0.3);
+    border-radius: 153px;
 }
 
 .btn {
@@ -68,9 +70,16 @@ h1 {
 section {
     padding: 60px 0;
     h2 {
+        text-align: center;
         color: $blue;
         font-size: 50px;
         line-height: 56px;
+        font-weight: normal;
+        font-family: 'CleanvertisingLight', sans-serif;
+
+    }
+    p {
+        color: $black;
     }
     &.s__dark {
         h2,
@@ -94,7 +103,10 @@ body {
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-    color: red;
+  
+    border: 3px solid $red;
+    box-shadow: 0 0 10px rgba($red, 0.6) inset;
+    
 }
 
 body input:required:valid,

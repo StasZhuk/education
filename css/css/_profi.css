@@ -1,0 +1,8 @@
+.profi h2 {
+  margin-bottom: 50px;
+}
+
+.profi .profi__item-img,
+.profi .profi__item-desc {
+  display: inline-block;
+}

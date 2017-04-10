@@ -1,0 +1,80 @@
+.rewievs {
+    background-image: url("../../img/middle_bg.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+
+    .rewievs__item {
+        color: $white;
+        text-align: center;
+    }
+
+    img {
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        max-width: 260px;
+        max-height: 260px;
+        border-radius: 50%;
+        border: 10px solid grey;
+    }
+
+    .rewievs__desc {
+        text-align: center;
+        font-family: "RobotoRegular", sans-serif;
+
+        h4 {
+            font-family: "Times New Roman", sans-serif;
+            font-size: 22px;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        hr {
+            width: 100px;
+            margin: 20px auto 30px;
+            border-top: 1px solid $white;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 37px;
+        height: 140px;
+        background-image: url("../../img/arrow-next.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: .5;
+        border-left: 3px solid transparent;
+
+        &:hover {
+            opacity: 1;
+            
+            border-left: 3px solid rgba($white, 0.4);
+        }
+    }
+
+     .owl-prev {
+         right: 0;
+         top: 50%;
+         margin-top: -70px;
+         margin-right: 10px;
+
+     }
+     .owl-next {
+         left: 0;
+         top: 50%;
+         margin-top: -70px;
+         margin-left: 10px;
+         transform: rotate(180deg);
+     }
+}

@@ -1,5 +1,89 @@
 .profi {
     h2 {
-        
+        margin-bottom: 50px;
+    }
+    .profi__item {
+        padding-right: 40px;
+        margin-bottom: 20px;
+    }
+    .profi__item-img {
+        float: left;
+    }
+    i {
+        font-size: 100px;
+        line-height: 100px;
+        margin-top: -30px;
+        color: $red;
+    }
+    .profi__item-desc {
+        float: left;
+        padding: 0;
+        max-width: 83%;
+    }
+    span {
+        display: inline-block;
+        font-size: 32px;
+        margin-bottom: 5px;
+        color: $red;
+        font-weight: bold;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.form {
+    border: 5px solid $green;
+    border-radius: 5px;
+    padding: 25px;
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: "RobotoBold", sans-serif;
+        font-size: 22px;
+    }
+    label,
+    .form__city {
+        display: block;
+        margin-bottom: 20px;
+    }
+    label>div {
+        margin-bottom: 5px;
+        padding-left: 5px;
+        color: grey
+    }
+    select,
+    input:not([type="submit"]) {
+        width: 100%;
+        padding: 10px;
+        border: 3px solid transparent;
+        box-shadow: 0 0 5px rgba($black, 0.6) inset;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    input:focus,
+    select:focus {
+        outline-offset: 0;
+        outline: $green 0;
+        border: 3px solid $green;
+        box-shadow: 0 0 10px rgba($green, 0.6) inset;
+    }
+    select {
+        background: url("../../img/arrow.png") right center no-repeat;
+        background-position: 95% center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .form__city {
+        margin-bottom: 30px;
+    }
+    .button__wrap {
+        text-align: center;
+        margin-bottom: 5px;
+        button {
+            text-transform: uppercase;
+        }
     }
 }

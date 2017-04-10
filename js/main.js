@@ -24,6 +24,27 @@ $(document).ready(function () {
 	}).eq(0).addClass("active");
 
 
+
+	// Stellar paralax
+	$.stellar({
+		responsive: true
+	});
+
+
+	//OWLCarousel 
+	$(document).ready(function () {
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: true
+				}
+			},
+			navText: "",
+		});
+	});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function () {
 		ga("send", "event", "goal", "goal");

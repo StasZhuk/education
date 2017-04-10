@@ -5,6 +5,9 @@
 
 @media only screen and (max-width: 1200px) {
     .tizers {
+        .row {
+            padding: 0 15px;
+        }
         .row>div {
             text-align: center;
         }
@@ -16,12 +19,23 @@
             top: 27px;
         }
     }
+    .profi {
+        i {
+            font-size: 80px;
+        }
+    }
 }
 
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+     .form {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+}
 
 
 /* Small Devices, Tablets */
@@ -70,6 +84,38 @@
             top: -5px;
             margin: -15px;
         }
+        hr{
+            width: 80%;
+            margin: 25px 50px;
+        }
+    }
+    .profi {
+        .profi__item-desc {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+        .profi__item {
+            padding: 0 15px;
+            text-align: center;
+        }
+        .profi__item-img {
+            float: none;
+        }
+        i {
+            font-size: 100px;
+        }
+        hr {
+            width: 80%;
+            margin: 40px 50px;
+            margin-bottom: 30px;
+            border-top: 1px solid $red;
+        }
+    }
+
+    .form {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
     }
 }
 
@@ -78,7 +124,7 @@
 
 @media only screen and (max-width: 480px) {
     .header__heading {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .header__tabs {
         .tab {
@@ -89,12 +135,19 @@
             text-align: center;
         }
     }
+
+     .form {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    
+}
 
 
 /*==========  Mobile First Method  ==========*/
