@@ -105,7 +105,6 @@
             font-size: 100px;
         }
         hr {
-            width: 80%;
             margin: 40px 50px;
             margin-bottom: 30px;
             border-top: 1px solid $red;
@@ -157,9 +156,27 @@
 
     .contacts {
         .tab {
+            font-size: 14px;
             padding: 10px 0;
-            width: 170px;
+            width: 140px;
         }
+    }
+    section h2 {
+        font-size: 34px;
+    }
+    .callback h3 {
+        padding: 10px 10px;
+        font-size: 22px;
+    }
+    .profi .profi__item-desc {
+    padding: 0px 10px;
+    }
+    .profi .profi__item {
+    padding: 0;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev {
+    display: none;
     }
 }
 

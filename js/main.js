@@ -108,8 +108,7 @@ $(window).load(function () {
 
 	$(".header__h1").animated("fadeInDown", "fadeOut");
 	$(".header__tabs .wrapper").animated("flipInY", "fadeOut");
-	$(".profi__item").animated("fadeInLeft", "fadeOutRight");
-	$(".form").animated("lightSpeedIn", "fadeOut");
+	$(".profi__item").animated("fadeInLeft", "fadeOutLeft");
 	$(".callback h3").animated("fadeInUp", "fadeOut");
 	$(".footer").animated("fadeInLeft", "fadeOut");
 
